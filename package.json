@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sneas/cv-project.git"
+    "url": "git+https://github.com/roachhd/a-cv/project.git"
   },
   "keywords": [
     "cv",
     "resume"
   ],
-  "author": "Dmytro Snisarenko <dmytro@sneas.io>",
+  "author": "Katie Ball <katie@roachhd.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sneas/cv-project/issues"
+    "url": "https://github.com/roachhd/a-cv/project/issues"
   },
-  "homepage": "https://github.com/sneas/cv-project#readme",
+  "homepage": "https://github.com/roachhd/a-cv/project#readme",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "dayjs": "^1.11.4",
