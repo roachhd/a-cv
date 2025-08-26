@@ -1,0 +1,172 @@
+/* Photography Resume Styles */
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-light: #7f8c8d;
+    --border-color: #bdc3c7;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.page {
+    max-width: 21cm;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.skills {
+    background: #ecf0f1;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0.25rem 0;
+}
+
+.skills-bar {
+    background: linear-gradient(90deg, var(--accent-color), #2980b9);
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.fact-icon {
+    width: 16px;
+    text-align: center;
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+.badge {
+    font-size: 0.75em;
+    margin: 0.125rem;
+    color: var(--text-light) !important;
+    border-color: var(--border-color) !important;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.25rem 0;
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Print styles */
+@media print {
+    .page {
+        padding: 1rem;
+        max-width: none;
+        margin: 0;
+    }
+
+    .screen {
+        display: none !important;
+    }
+
+    .print {
+        display: block !important;
+    }
+
+    .border-print-0 {
+        border: none !important;
+    }
+
+    .pb-print-0 {
+        padding-bottom: 0 !important;
+    }
+
+    .mb-print-1 {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .col-print-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-print-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+}
+
+/* Screen-only styles */
+@media screen {
+    .print {
+        display: none;
+    }
+}
+
+/* Photography-specific enhancements */
+.img-fluid {
+    border: 3px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.border-dark {
+    border-color: var(--border-color) !important;
+}
+
+/* Enhanced visual hierarchy */
+.fs-3 {
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+/* Skills section enhancements */
+.skills-bar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: rgba(255,255,255,0.3);
+}
+
+/* Professional experience styling */
+.fw-normal {
+    color: var(--primary-color);
+}
+
+/* Additional spacing and typography */
+ul li {
+    margin-bottom: 0.25rem;
+}
+
+small {
+    color: var(--text-light);
+}
+
+.text-nowrap a {
+    color: inherit;
+}
